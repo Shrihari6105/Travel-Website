@@ -1,0 +1,321 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: black;
+    background: url("./files/flight1.jpg");
+    font-family: 'Jost', sans-serif;
+    min-height: 100vh;
+
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    /* backdrop-filter: blur(1.5px); */
+    /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    width: 100px;
+    margin: 2vh;
+    margin-left: 8%;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 4vh;
+}
+
+.navbar a {
+    color: white;
+    font-size: 18px;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: ease 0.40s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background: white;
+    color: black;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 5px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
+.title {
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+    padding: 14px 17px;
+    margin-top: 32vh;
+    text-align: center;
+    vertical-align: center;
+}
+
+.title h1 {
+    font-size: 10vh;
+    text-shadow: 2px black;
+    transition: ease 0.3s;
+}
+
+.title h1:hover {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+
+}
+
+.button {
+    display: inline-block;
+    margin-top: 5vh;
+    font-size: 25px;
+    padding: 10px 30px;
+    color: white;
+    /* background-color:rgb(164, 44, 44); */
+    background-color: rgb(23, 86, 149);
+    border-radius: 20px;
+    text-decoration: none;
+    transition: ease 0.30s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    color: rgb(23, 86, 149);
+    background-color: white;
+    /* border: 2px solid rgb(42, 37, 68); */
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 2.4);
+    padding: 10px 30px;
+}
+
+/* Details */
+
+.details {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 80px; 
+    padding: 50px 20px; 
+    width: 200%; 
+    min-height: 80vh;
+}
+
+.container {
+    max-width: 800px; 
+    width: 150%;
+    background: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(6px); 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.15);
+}
+
+.row {
+    display: flex;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.form-group {
+    flex: 1; 
+}
+
+.card.custom-bg {
+    width: 90%;
+    max-height: fit-content; 
+    padding: 30px; 
+}
+
+h3 {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+    backdrop-filter: blur(0.5px);
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.15);
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+select option{
+    background-color: #474646;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.btn-primary {
+    display: block;
+    background-color: rgb(23, 86, 149);
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    width: 100%;
+    cursor: pointer;
+    transition: ease 0.3s;
+    padding: 15px;
+}
+
+.btn-primary:hover {
+    border: 2px solid rgb(23, 86, 149);
+    background-color: transparent;
+    transform: scale(1.05);
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-left: 50px; /* Adjust the value to move it left */
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: rgba(40,40,40,0.4);
+    color:black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    position: relative;
+    left: -5px;
+    top: -5px;
+}
+
+.form-check-input:checked {
+    background-image: url("tick.png");
+    background: rgb(23, 86, 149);
+}
+
+.form-check-input:checked::after {
+    content: '✔'; /* Unicode checkmark */
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-check-label {
+    font-size: 20px; 
+    color: white;
+    margin-left: 10px;
+}
+/* .form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.sublabel {
+    color: gray;
+    margin: 4px;
+    font-size: 11px;
+}
+
+input[type="text"],
+input[type="date"] {
+    padding: 10px;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #0050A0;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="date"] {
+    position: relative;
+}
+
+input[type="date"]:before {
+    content: attr(placeholder);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.65);
+    pointer-events: none;
+    line-height: 1.5;
+    padding: 10px 0.5rem 0 0.5rem;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:not([value=""]):before {
+    display: none;
+}
+
+.custom-bg {
+    background-color: #F7F7F9;
+} */

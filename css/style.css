@@ -358,8 +358,9 @@ nav ul li a{
 
 .location-content{
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .col-content{
@@ -805,10 +806,12 @@ nav ul li a{
 }
 
 .location-img img{
-    height: 400px;
-    width: 400px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
 }
 
 .stars i{
