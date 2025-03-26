@@ -139,7 +139,7 @@ nav ul li a {
     max-width: 800px; 
     width: 150%;
     background: rgba(255, 255, 255, 0.15); 
-    backdrop-filter: blur(6px); 
+    backdrop-filter: blur(3px); 
     padding: 30px;
     border-radius: 15px;
     box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.15);

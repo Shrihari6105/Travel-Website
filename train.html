@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Flights</title>
+    <title>Book Trains</title>
     <link rel="icon" href="./files/logo2.png">
     <link rel="stylesheet" type="text/css" href="css/services.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,54 +18,56 @@
     <script src="flight.js"></script>
 
 </head>
+
 <body>
-    <img src="files/flight1.jpg" alt="Background Image" style="width: 100%; height: 100%; position: absolute; z-index: -1;">
+    <img src="files/trainpic.jpg" alt="Background Image"
+        style="width: 100%; height: 100%; position: absolute; z-index: -1;">
     <nav>
         <img src="./files/logo2.png" class="logo" alt="Logo" title="FirstFlight Travels">
-            <ul class="navbar">
-                <li>
-                    <a href="./index.html">Home</a>
-                    <a href="./index.html#container">Services</a>
-                    <a href="./index.html#locations">Popular Places</a>
-                    <a href="./contact.html">Contact Us</a>
-                    <a href="./SignUp.html" class="button">Sign Up</a>
-                </li>
+        <ul class="navbar">
+            <li>
+                <a href="./index.html">Home</a>
+                <a href="./index.html#container">Services</a>
+                <a href="./index.html#locations">Popular Places</a>
+                <a href="./contact.html">Contact Us</a>
+                <a href="./SignUp.html" class="button">Sign Up</a>
+            </li>
         </ul>
     </nav>
 
-    <section class = "details">
+    <section class="details">
         <div class="container">
             <div class="card custom-bg w-75 p-4 d-flex">
                 <div class="row">
-                    <div class="pb-3 h3 text-left">Flight Search</div>
+                    <div class="pb-3 h3 text-left">TRAINS</div>
                 </div>
                 <form id="flight-form" onsubmit="return validateForm()">
                     <div class="row">
                         <div class="form-group col-md align-items-start flex-column">
                             <label for="origin" class="d-inline-flex">From</label>
-                            <input type="text" placeholder="City or Airport" class="form-control" id="origin" name="origin"
-                                required>
+                            <input type="text" placeholder="Station" class="form-control" id="origin"
+                                name="origin" required>
                         </div>
                         <div class="form-group col-md align-items-start flex-column">
                             <label for="depart" class="d-inline-flex">To</label>
-                            <input type="text" placeholder="City or Airport" class="form-control" id="depart" name="depart"
-                                required>
+                            <input type="text" placeholder="Station" class="form-control" id="depart"
+                                name="depart" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md align-items-start flex-column">
-                            <label for="departure-date" class=" d-inline-flex">Depart</label>
-                                <input type="date" class="form-control" id="departure-date" name="departure-date"
+                            <label for="departure-date" class=" d-inline-flex">Departure</label>
+                            <input type="date" class="form-control" id="departure-date" name="departure-date"
                                 onkeydown="return false" required>
                         </div>
-                        <div class="form-group col-md align-items-start flex-column">
+                        <!-- <div class="form-group col-md align-items-start flex-column">
                             <label for="return-date" class="d-inline-flex">Return</label>
                             <input type="date" placeholder="One way" value=""
                                 onChange="this.setAttribute('value', this.value)" class="form-control" id="return-date"
                                 name="return-date">
-                        </div>
+                        </div> -->
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="form-group col-lg-3 align-items-start flex-column">
                             <label for="adults" class="d-inline-flex col-auto">Adults <span class="sublabel"> 12+
                                 </span></label>
@@ -97,43 +100,48 @@
                             </select>
                         </div>
                         <div class="form-group col-lg-3 align-items-start flex-column">
-                            <label for="infants" class="d-inline-flex col-auto">Infants <span class="sublabel"> less than
+                            <label for="infants" class="d-inline-flex col-auto">Infants <span class="sublabel"> less
+                                    than
                                     2</span></label>
                             <select class="form-select" id="infants">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                             </select>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="row">
-                        <div class="form-group col-lg-6 align-items-start flex-column">
-                            <label for="cabin" class="d-inline-flex">Cabin</label>
+                        <!-- <div class="form-group col-lg-6 align-items-start flex-column">
+                            <label for="cabin" class="d-inline-flex">Compartment</label>
                             <select class="form-select" id="cabin">
                                 <option value="ECONOMY">Economy</option>
                                 <option value="PREMIUM_ECONOMY">Premium Economy</option>
                                 <option value="BUSINESS">Business</option>
                                 <option value="FIRST">First</option>
                             </select>
-                        </div>
-                        <div class="form-group col-lg-6 align-items-start flex-column pt-lg-4">
+                        </div> -->
+                        <!-- <div class="form-group col-lg-6 align-items-start flex-column pt-lg-4">
                             <br><br>
                             <div class="form-check form-switch">
                                 <input class="form-check-input" type="checkbox" id="directFlights">
                                 <label class="form-check-label" for="directFlights">Direct flights</label>
-                            </div>                            
-                        </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="button-container">
+                            <button class="booking-btn tatkal">Tatkal Booking</button>
+                            <button class="booking-btn premium-tatkal">Premium Tatkal</button>
+                            <button class="booking-btn general">General Booking</button>
+                          </div> -->
                     </div>
                     <div class="row">
                         <div class="text-left col-auto">
-                            <button type="submit" class="btn btn-primary">Search flights</button>
+                            <button type="submit" class="btn btn-primary">Search Trains</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </section>
-    
-   
+
     <section class="footer">
         <div class="foot">
             <div class="footer-content">
@@ -168,4 +176,5 @@
         </div>
     </section>
 </body>
+
 </html>
