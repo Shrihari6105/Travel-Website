@@ -8,10 +8,14 @@
     scroll-behavior: smooth;
 }
 
+
+
 body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
+    height: 100%;
     background-color: black;
     background: url("./files/flight1.jpg");
     font-family: 'Jost', sans-serif;
@@ -120,6 +124,8 @@ nav ul li a {
 /* Details */
 
 .details {
+    max-width: 1200px; /* Set a max width */
+    margin: auto; /* Center it */
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -260,62 +266,92 @@ select option{
     color: white;
     margin-left: 10px;
 }
-/* .form-group {
+
+/* Footer */
+
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: rgb(23, 86, 149);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.foot {
+    padding: 40px 0;
+}
+
+.footer-content{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-label {
-    width: 100px;
-    text-align: right;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-.sublabel {
-    color: gray;
-    margin: 4px;
-    font-size: 11px;
-}
-
-input[type="text"],
-input[type="date"] {
-    padding: 10px;
-    font-size: 14px;
-}
-
-button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #0050A0;
-    border: none;
-    cursor: pointer;
-}
-
-input[type="date"] {
+.footlinks h4{
+    text-align: left;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 30px;
     position: relative;
 }
 
-input[type="date"]:before {
-    content: attr(placeholder);
+
+.footlinks h4::before{
+    content: "";
     position: absolute;
-    top: 0;
+    height: 2px;
+    width: 70px;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: #fff;
-    color: rgba(0, 0, 0, 0.65);
-    pointer-events: none;
-    line-height: 1.5;
-    padding: 10px 0.5rem 0 0.5rem;
+    bottom: -7px;
+    background: white;
 }
 
-input[type="date"]:focus:before,
-input[type="date"]:not([value=""]):before {
-    display: none;
+.footlinks ul li{
+    margin-bottom: 15px;
 }
 
-.custom-bg {
-    background-color: #F7F7F9;
-} */
+.footlinks ul li a{
+    text-align: left;
+    font-size: 17px;
+    color: #dddddd;
+    display: block;
+    transition: ease 0.30s;
+}
+
+.footlinks ul li a:hover{
+    transform: translate(6px);
+    color: white;
+}
+
+.social a{
+    font-size: 25px;
+    margin: 4px;
+    height: 40px;
+    width: 40px;
+    color: rgb(23, 86, 149);
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: ease 0.30s;
+}
+
+.social a:hover{
+    transform: scale(1.2);
+}
+
+.end {
+    width: 100%;
+    text-align: center;
+}
+
+.end p{
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
