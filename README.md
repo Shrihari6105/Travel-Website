@@ -1,7 +1,3 @@
-Here's a **GitHub README** file for your **Instant Travels** project:  
-
----
-
 ## **Instant Travels** 🌍✈️  
 ### **Seamless Travel Booking for Flights, Trains, Buses, and Hotels**  
 
@@ -66,7 +62,3 @@ cd instant-travels
 ## **📞 Contact**  
 🔹 **Developer:** [Shrihari](https://github.com/Shrihari6105)  
 🔹 **Website:** [Instant Travels](https://yourwebsite.com)  
-
----
-
-Let me know if you need modifications! 🚀
